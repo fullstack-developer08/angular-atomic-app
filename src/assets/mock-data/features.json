@@ -1,0 +1,103 @@
+[{
+    "id": "1",
+    "description": "User Accounts",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "1"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "description": "User Projects",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "1"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "description": "API Calls",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "1"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "description": "Storage",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "1"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "description": "Custom Cloud Service",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "0"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "description": "Usage Reports",
+    "availability": [{
+        "planId": "Bronze",
+        "availability": "1"
+      },
+      {
+        "planId": "Silver",
+        "availability": "1"
+      },
+      {
+        "planId": "Gold",
+        "availability": "1"
+      }
+    ]
+  }
+]
