@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
   public angularclassLogo = 'assets/img/angularclass-avatar.png';
   public name = 'Angular Quick Starter Seed';
   public url = 'https://twitter.com/TarunKumarSukhu';
+  public prodMode = ('production' === ENV) ? true : false;
 
   constructor(
     public appState: AppState,

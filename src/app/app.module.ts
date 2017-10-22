@@ -101,7 +101,8 @@ const initialReducerState = {
         order: orderInitState
       };
 const appReducer = compose(
-  localStorageSync({keys: ['user'], rehydrate : true}), combineReducers)(reducers);
+  localStorageSync({keys: ['user', 'plans', 'features'], rehydrate : true}), 
+    combineReducers)(reducers);
 
 export function rootReducer(state: any, action: any) {
   return appReducer(state, action);
