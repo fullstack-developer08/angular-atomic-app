@@ -5,12 +5,61 @@ body
 .panel
 {
     text-align: center;
+    font-weight: bold;
 }
 .panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
 .panel-body
 {
     padding: 0px;
     text-align: center;
+}
+.panel-title {
+    color:black;
+    font-weight: bold;
+}
+.panel-primary>.panel-heading {
+    background: rgb(58, 90, 115);
+    color:black;
+    background-color: rgb(105, 153, 193);
+    border-color: rgb(105, 153, 193);
+}
+.panel-primary{
+    border-color: rgb(105, 153, 193);
+}
+
+.panel-success>.panel-heading {
+    background: rgb(134, 162, 77);
+    color:black;
+    background-color: rgb(134, 162, 77);
+    border-color: rgb(134, 162, 77);
+}
+
+.panel-success {
+    border-color: rgb(134, 162, 77);
+}
+
+.panel-info {
+    border-color: rgb(253, 161, 49);
+}
+.panel-info>.panel-heading {
+    background: rgb(253, 161, 49);
+    color:black;
+    background-color: rgb(253, 161, 49);
+    border-color: rgb(253, 161, 49);
+}
+.panel-footer>.btn-info {
+    background: rgb(133, 64, 0);
+    border-color: rgb(133, 64, 0);
+}
+
+.panel-footer>.btn-success {
+    background: rgb(48, 100, 43);
+    border-color: rgb(48, 100, 43);
+}
+
+.panel-footer>.btn-primary {
+    background: rgb(58, 90, 115);
+    border-color: rgb(58, 90, 115);
 }
 
 .the-price
