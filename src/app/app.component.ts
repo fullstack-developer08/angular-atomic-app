@@ -15,6 +15,7 @@ import { AppStore } from './common/models/appstore.model';
 import { ShoppingCart } from './common/models/shopping-cart.model';
 import { Utils } from './common/utils';
 import { Logger } from './common/logging/default-log.service';
+import * as WebFont from 'webfontloader';
 import 'rxjs/add/operator/map';
 /**
  * App Component
@@ -43,6 +44,11 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
+    WebFont.load({
+      google: {
+        families: ['Roboto', 'sans-serif']
+      }
+    });
     this.loadPlans();
     this.initCart();
   }

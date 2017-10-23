@@ -103,6 +103,7 @@
     "ngrx-store-localstorage": "^0.2.4",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.5.0",
+    "webfontloader": "^1.6.28",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
@@ -120,6 +121,7 @@
     "assets-webpack-plugin": "^3.5.1",
     "awesome-typescript-loader": "~3.1.2",
     "codelyzer": "~2.1.1",
+    "compression-webpack-plugin": "^1.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.0",
     "css-loader": "^0.28.0",
