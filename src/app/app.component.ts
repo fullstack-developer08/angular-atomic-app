@@ -17,6 +17,8 @@ import { Utils } from './common/utils';
 import { Logger } from './common/logging/default-log.service';
 import * as WebFont from 'webfontloader';
 import 'rxjs/add/operator/map';
+
+import { NavLinks } from './common/models/nav-bar.model';
 /**
  * App Component
  * Top Level Component
@@ -34,7 +36,7 @@ export class AppComponent implements OnInit {
   public name = 'Angular Quick Starter Seed';
   public url = 'https://twitter.com/TarunKumarSukhu';
   public prodMode = ('production' === ENV) ? true : false;
-
+  public links: NavLinks[];
   constructor(
     public appState: AppState,
     public planService: PlanService,
@@ -49,6 +51,26 @@ export class AppComponent implements OnInit {
         families: ['Roboto', 'sans-serif']
       }
     });
+
+    this.links = [
+      {
+        name: 'Home',
+        url: 'home',
+        classes: 'fa fa-home',
+        active: true
+      },
+      {
+        name: 'Plans',
+        url: 'plans',
+        classes: 'fa fa-list'
+      },
+      {
+        name: 'About',
+        url: 'about',
+        classes: 'fa fa-info-circle'
+      }
+    ];
+
     this.loadPlans();
     this.initCart();
   }

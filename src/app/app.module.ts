@@ -130,7 +130,7 @@ export function rootReducer(state: any, action: any) {
     HttpModule,
     CoreModule,
     RouterModule.forRoot(ROUTES, {
-      useHash: Boolean(history.pushState) === false,
+      useHash: true, //Boolean(history.pushState) === false,
       preloadingStrategy: PreloadAllModules
     }),
     StoreModule.provideStore(rootReducer, initialReducerState),
