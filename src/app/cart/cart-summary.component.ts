@@ -10,7 +10,7 @@ import { DELETE_ITEM } from '../common/reducers/shopping-cart';
 import { Observable } from 'rxjs/Rx';
 import { Observer } from 'rxjs/Observer';
 import { User } from '../common/models/user.model';
-import { ShoppingCart, LineItem } from '../common/models/shopping-cart.model';
+import { ShoppingCart, LineItem } from 'angular-atomic-library';
 import { Plan, Feature, FeatureMap, FeatureAvailability } from '../common/models/catalog.model';
 import { AppStore } from '../common/models/appstore.model';
 import { PlanService } from '../common/services/plan.service';
