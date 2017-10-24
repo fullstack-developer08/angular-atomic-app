@@ -6,7 +6,7 @@ This is a sample for building an Angular 4 web app based on the atomic web desig
 
 * The concept is based on Brad Frost "Atomic Web Design"
 * Atoms / Molecules - Bootstrap , Google Fonts , Font Awesome
-* Organisms / Templates - Build as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
+* Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
 
 # Atomic Library Dependency
 
