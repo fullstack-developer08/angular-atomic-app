@@ -10,7 +10,7 @@ import {
 import { Observable } from 'rxjs/Rx';
 import { Observer } from 'rxjs/Observer';
 
-import { LineItem } from '../common/models/shopping-cart.model';
+import { LineItem } from 'angular-atomic-library';
 import { Logger } from '../common/logging/default-log.service';
 import * as _ from 'lodash';
 

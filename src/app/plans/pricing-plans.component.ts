@@ -9,7 +9,7 @@ import { Observer } from 'rxjs/Observer';
 import { Plan, Feature, FeatureMap, FeatureAvailability } from '../common/models/catalog.model';
 import { PlanService } from '../common/services/plan.service';
 import { Logger } from '../common/logging/default-log.service';
-import { LineItem } from '../common/models/shopping-cart.model';
+import { LineItem } from 'angular-atomic-library';
 import { ADD_ITEM } from '../common/reducers/shopping-cart';
 
 @Component({

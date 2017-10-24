@@ -1,6 +1,6 @@
 import { Plan, FeatureMap } from './catalog.model';
 import { Order } from './order.model';
-import { ShoppingCart } from './shopping-cart.model';
+import { ShoppingCart } from 'angular-atomic-library';
 import { User } from './user.model';
 
 /**

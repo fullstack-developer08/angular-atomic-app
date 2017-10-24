@@ -1,4 +1,4 @@
-import { ShoppingCart } from './shopping-cart.model';
+import { ShoppingCart } from 'angular-atomic-library';
 import { Address } from './address.model';
 
 export interface Order {

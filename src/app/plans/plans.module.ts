@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { PricingHomeComponent } from './pricing-home.component';
-import { PlanDetailsComponent } from './plan-details.component';
+import { PlanDetailsComponent } from 'angular-atomic-library';
 // import { PlanService } from '../common/services/plan.service';
 
 @NgModule({

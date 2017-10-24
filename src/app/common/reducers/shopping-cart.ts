@@ -1,5 +1,5 @@
 import { ActionReducer, Action } from '@ngrx/store';
-import { ShoppingCart } from '../models/shopping-cart.model';
+import { ShoppingCart } from 'angular-atomic-library';
 
 export const CREATE_CART = 'CREATE_CART';
 export const ADD_ITEM = 'ADD_ITEM';

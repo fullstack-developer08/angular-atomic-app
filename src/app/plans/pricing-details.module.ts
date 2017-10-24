@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { routing } from './pricing-plans.routes';
 import { PricingPlansComponent } from './pricing-plans.component';
-import { PlanOptionsComponent } from './plan-options.component';
+import { PlanOptionsComponent } from 'angular-atomic-library';
 // import { PlanService } from '../common/services/plan.service';
 import { CartModule } from '../cart/cart.module';
 
