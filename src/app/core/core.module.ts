@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { NavBarComponent } from '../navbar/nav-bar.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @NgModule({
     imports: [FormsModule,
@@ -15,11 +16,13 @@ import { NavBarComponent } from '../navbar/nav-bar.component';
     ],
     exports: [
         // ADD ALL EXPORTED APP LEVEL COMPONENTS HERE
-        NavBarComponent
+        NavBarComponent,
+        FooterComponent
     ],
     declarations: [
         // ADD ALL APP LEVEL COMPONENTS HERE
-        NavBarComponent
+        NavBarComponent,
+        FooterComponent
     ],
     providers: [
         // ADD ALL COMMON SERVICES HERE
