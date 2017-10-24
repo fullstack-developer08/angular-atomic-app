@@ -25,7 +25,7 @@
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav">
           <li *ngFor="let link of links">
-            <a [routerLink]="link.url" routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}" >
+            <a [routerLink]="link.url" routerLinkActive="active-link" >
               <i class="{{link.classes}}" aria-hidden="true"></i> {{link.name}}</a>
           </li>
         </ul>

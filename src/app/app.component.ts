@@ -16,6 +16,7 @@ import { ShoppingCart } from './common/models/shopping-cart.model';
 import { Utils } from './common/utils';
 import { Logger } from './common/logging/default-log.service';
 import * as WebFont from 'webfontloader';
+import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
 import { NavLinks } from './common/models/nav-bar.model';
@@ -37,12 +38,16 @@ export class AppComponent implements OnInit {
   public url = 'https://twitter.com/TarunKumarSukhu';
   public prodMode = ('production' === ENV) ? true : false;
   public links: NavLinks[];
+
+  public shoppingCart: Observable<ShoppingCart>;
   constructor(
     public appState: AppState,
     public planService: PlanService,
     private store: Store<AppStore>,
     private logger: Logger
-  ) { }
+  ) {
+    this.shoppingCart = store.select('shoppingCart');
+   }
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
