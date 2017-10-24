@@ -12,14 +12,14 @@ import { PlanService } from './common/services/plan.service';
 import { ADD_PLANS } from './common/reducers/plan';
 import { ADD_FEATURES } from './common/reducers/features';
 import { AppStore } from './common/models/appstore.model';
-import { ShoppingCart } from './common/models/shopping-cart.model';
+import { ShoppingCart } from 'angular-atomic-library';
 import { Utils } from './common/utils';
 import { Logger } from './common/logging/default-log.service';
 import * as WebFont from 'webfontloader';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
-import { NavLinks } from './common/models/nav-bar.model';
+import { NavLinks } from 'angular-atomic-library';
 /**
  * App Component
  * Top Level Component

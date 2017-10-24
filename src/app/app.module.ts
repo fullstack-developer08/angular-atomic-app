@@ -51,6 +51,7 @@ import { ConsoleLogService } from './common/logging/console-log.service';
 import { Logger } from './common/logging/default-log.service';
 import { PlanService } from './common/services/plan.service';
 import { AppStateService } from './common/services/app-state.service';
+import { LayoutModule } from 'angular-atomic-library';
 
 import { RegisterGuard } from './common/guards/register.guard';
 // import { CookieService } from 'angular2-cookie/services/cookies.service';
@@ -137,6 +138,7 @@ export function rootReducer(state: any, action: any) {
     StoreDevtoolsModule.instrumentStore(instrumentOptions),
     StoreLogMonitorModule,
 //    PricingPlansModule,
+    LayoutModule,
     PlansModule
   ],
   /**

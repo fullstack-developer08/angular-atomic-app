@@ -5,8 +5,7 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NavBarComponent } from '../navbar/nav-bar.component';
-import { FooterComponent } from '../footer/footer.component';
+
 
 @NgModule({
     imports: [FormsModule,
@@ -16,13 +15,9 @@ import { FooterComponent } from '../footer/footer.component';
     ],
     exports: [
         // ADD ALL EXPORTED APP LEVEL COMPONENTS HERE
-        NavBarComponent,
-        FooterComponent
     ],
     declarations: [
         // ADD ALL APP LEVEL COMPONENTS HERE
-        NavBarComponent,
-        FooterComponent
     ],
     providers: [
         // ADD ALL COMMON SERVICES HERE
