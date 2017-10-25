@@ -12,7 +12,7 @@ export const ROUTES: Routes = [
   { path: 'home',  component: PricingHomeComponent },
   { path: 'plans', loadChildren: './plans#PricingDetailsModule' },
   { path: 'register', canActivate: [ RegisterGuard ], loadChildren: './register#RegisterModule' },
-  { path: 'summary', loadChildren: './cart#CartSummaryModule' },
+  { path: 'summary', loadChildren: './invoice#InvoiceModule' },
   { path: 'about', component: AboutComponent },
   { path: '**',    component: NoContentComponent },
 ];

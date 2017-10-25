@@ -1,11 +1,11 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CartSummaryComponent } from './cart-summary.component';
+import { InvoiceComponent } from './invoice.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: CartSummaryComponent
+        component: InvoiceComponent
     }
 ];
 

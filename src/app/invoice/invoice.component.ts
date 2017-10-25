@@ -25,10 +25,10 @@ import { Logger } from '../common/logging/default-log.service';
 import * as _ from 'lodash';
 
 @Component({
-    selector: 'cart-summary',
-    templateUrl: './cart-summary.component.html'
+    selector: 'invoice-summary',
+    templateUrl: './invoice.component.html'
 })
-export class CartSummaryComponent implements OnInit {
+export class InvoiceComponent implements OnInit {
     public shoppingCart: Observable<ShoppingCart>;
     public user: Observable<User>;
     public total: number;
