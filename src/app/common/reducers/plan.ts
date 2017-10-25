@@ -1,5 +1,5 @@
 import { ActionReducer, Action } from '@ngrx/store';
-import { Plan } from '../models/catalog.model';
+import { Plan } from 'angular-atomic-library';
 
 export const ADD_PLANS = 'ADD_PLANS';
 

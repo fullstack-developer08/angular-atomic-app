@@ -2,7 +2,7 @@ import { Injectable, Inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppStore } from '../models/appstore.model';
 import { Utils } from '../utils';
-import { User } from '../models/user.model';
+import { User } from 'angular-atomic-library';
 import { UPDATE_UUID, RESET_UUID } from '../reducers/user';
 import 'rxjs/add/operator/take';
 

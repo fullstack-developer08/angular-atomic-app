@@ -11,9 +11,9 @@ import { Observer } from 'rxjs/Observer';
 
 import { ADD_PLANS } from '../common/reducers/plan';
 import { LOAD_FEATURES } from '../common/effects/features.effects';
-import { Plan, Feature, FeatureMap, FeatureAvailability } from '../common/models/catalog.model';
+import { Plan, Feature, FeatureMap, FeatureAvailability } from 'angular-atomic-library';
 import { AppStore } from '../common/models/appstore.model';
-import { User } from '../common/models/user.model';
+import { User } from 'angular-atomic-library';
 import { PlanService } from '../common/services/plan.service';
 import { AppStateService } from '../common/services/app-state.service';
 import { Logger } from '../common/logging/default-log.service';

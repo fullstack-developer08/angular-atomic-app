@@ -1,5 +1,5 @@
 import { ActionReducer, Action } from '@ngrx/store';
-import { User } from '../models/user.model';
+import { User } from 'angular-atomic-library';
 export const userInitState: User = {
     id: 0,
     firstName: '',

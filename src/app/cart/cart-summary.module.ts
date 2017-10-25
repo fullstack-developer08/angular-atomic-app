@@ -3,7 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routing } from './cart-summary.routes';
-import { CartSummaryComponent } from './cart-summary.component';
+import { CartSummaryComponent } from './cart-summary.component'
+import { OrderDetailsModule } from 'angular-atomic-library';
 
 console.log('`Cart Summary` bundle loaded asynchronously');
 
@@ -18,6 +19,7 @@ console.log('`Cart Summary` bundle loaded asynchronously');
   imports: [
     CommonModule,
     FormsModule,
+    OrderDetailsModule,
     routing
   ]
 })

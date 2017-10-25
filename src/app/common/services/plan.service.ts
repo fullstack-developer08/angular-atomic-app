@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { Store } from '@ngrx/store';
 import { AppStore } from '../models/appstore.model';
-import { Plan, Feature, FeatureMap } from '../models/catalog.model';
+import { Plan, Feature, FeatureMap } from 'angular-atomic-library';
 import 'rxjs/add/operator/map';
 /**
  * PricingService for

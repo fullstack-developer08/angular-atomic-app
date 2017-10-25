@@ -6,7 +6,7 @@ import { Store, Action } from '@ngrx/store';
 import { AppStore } from '../common/models/appstore.model';
 import { Observable } from 'rxjs/Rx';
 import { Observer } from 'rxjs/Observer';
-import { Plan, Feature, FeatureMap, FeatureAvailability } from '../common/models/catalog.model';
+import { Plan, Feature, FeatureMap, FeatureAvailability } from 'angular-atomic-library';
 import { PlanService } from '../common/services/plan.service';
 import { Logger } from '../common/logging/default-log.service';
 import { LineItem } from 'angular-atomic-library';

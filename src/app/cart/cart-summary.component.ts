@@ -9,9 +9,15 @@ import { DELETE_ITEM } from '../common/reducers/shopping-cart';
 
 import { Observable } from 'rxjs/Rx';
 import { Observer } from 'rxjs/Observer';
-import { User } from '../common/models/user.model';
-import { ShoppingCart, LineItem } from 'angular-atomic-library';
-import { Plan, Feature, FeatureMap, FeatureAvailability } from '../common/models/catalog.model';
+import {
+    User,
+    ShoppingCart,
+    LineItem,
+    Plan,
+    Feature,
+    FeatureMap,
+    FeatureAvailability
+    } from 'angular-atomic-library';
 import { AppStore } from '../common/models/appstore.model';
 import { PlanService } from '../common/services/plan.service';
 import { AppStateService } from '../common/services/app-state.service';
@@ -19,13 +25,7 @@ import { Logger } from '../common/logging/default-log.service';
 import * as _ from 'lodash';
 
 @Component({
-    // The selector is what angular internally uses
-    // for `document.querySelectorAll(selector)` in our index.html
-    // where, in this case, selector is the string 'home'
-    selector: 'cart-summary',  // <home></home>
-    // We need to tell Angular's Dependency Injection which providers are in our app.
-    styleUrls: ['./cart-summary.component.scss'],
-    // Every Angular template is first compiled by the browser before Angular runs it's compiler
+    selector: 'cart-summary',
     templateUrl: './cart-summary.component.html'
 })
 export class CartSummaryComponent implements OnInit {

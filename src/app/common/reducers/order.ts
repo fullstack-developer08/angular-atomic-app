@@ -1,5 +1,5 @@
 import { ActionReducer, Action } from '@ngrx/store';
-import { Order } from '../models/order.model';
+import { Order } from 'angular-atomic-library';
 export const orderInitState: Order = {};
 
 export const ADD_ORDER = 'ADD_ORDER';

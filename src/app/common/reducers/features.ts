@@ -1,5 +1,5 @@
 import { ActionReducer, Action } from '@ngrx/store';
-import { Plan, FeatureMap } from '../models/catalog.model';
+import { Plan, FeatureMap } from 'angular-atomic-library';
 
 export const ADD_FEATURES = 'ADD_FEATURES';
 

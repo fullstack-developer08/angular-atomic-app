@@ -22,7 +22,7 @@ import { Store, Action } from '@ngrx/store';
 import { AppStore } from '../common/models/appstore.model';
 import { Logger } from '../common/logging/default-log.service';
 
-import { User } from '../common/models/user';
+import { User } from 'angular-atomic-library';
 import { UPDATE_USER } from '../common/reducers/user';
 
 import * as _ from 'lodash';

@@ -1,7 +1,5 @@
-import { Plan, FeatureMap } from './catalog.model';
-import { Order } from './order.model';
-import { ShoppingCart } from 'angular-atomic-library';
-import { User } from './user.model';
+import { Plan, FeatureMap, Order , ShoppingCart , User } from 'angular-atomic-library';
+
 
 /**
  * Application Store for state management
