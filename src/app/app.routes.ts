@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { NavBarComponent } from './navbar';
 import { PricingHomeComponent } from './plans';
 import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
+import { NoContentComponent } from 'angular-atomic-library';
 
 import { DataResolver } from './app.resolver';
 import { RegisterGuard } from './common/guards/register.guard';

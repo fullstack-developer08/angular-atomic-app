@@ -34,7 +34,6 @@ import { AppState, InternalStateType } from './app.service';
 import { PlansModule } from './plans';
 import { CoreModule } from './core/core.module.ts';
 import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
 import { Store, StoreModule, combineReducers } from '@ngrx/store';
 import { compose } from '@ngrx/core/compose';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -116,8 +115,7 @@ export function rootReducer(state: any, action: any) {
   bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    AboutComponent,
-    NoContentComponent
+    AboutComponent
   ],
   /**
    * Import Angular's modules.

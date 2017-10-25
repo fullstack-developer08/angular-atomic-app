@@ -6,8 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { routing } from './pricing-plans.routes';
 import { PricingPlansComponent } from './pricing-plans.component';
 import { PlanOptionsComponent } from 'angular-atomic-library';
-// import { PlanService } from '../common/services/plan.service';
-import { CartModule } from '../cart/cart.module';
+import { CartModule } from 'angular-atomic-library';
 
 console.log('`Plans` bundle loaded asynchronously');
 
