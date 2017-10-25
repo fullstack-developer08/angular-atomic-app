@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { routing } from './register.routes';
 import { RegisterComponent } from './register.component';
+import { RegisterFormModule } from 'angular-atomic-library';
 
 console.log('`Register User` bundle loaded asynchronously');
 
@@ -21,6 +22,7 @@ console.log('`Register User` bundle loaded asynchronously');
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
+        RegisterFormModule,
         SharedModule,
         routing
     ]
