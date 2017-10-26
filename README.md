@@ -25,10 +25,17 @@ In you library root folder: (Separate Terminal)
 ```bash
 # Create symbolic link
 npm link
+```
 
+<p align="center">
+    <img  alt="Tipe" src="./pics/step1_link.png" class="img-responsive">
+</p>
+
+```bash
 # Build library in watch mode
 npm build:watch
 ```
+
 
 In the angular-atomic-app project folder that should consume the library: (Separate Terminal)
 
@@ -37,8 +44,12 @@ The below steps will import your library into your project's source code
 ```bash
 # Link you library to the project
 npm link "angular-atomic-library"
+```
+<p align="center">
+    <img  alt="Tipe" src="./pics/step2_link.png" class="img-responsive">
+</p>
 
-
+```bash
 # Build your project
 npm start
 ```
