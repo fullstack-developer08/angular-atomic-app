@@ -1,6 +1,6 @@
 {
-  "name": "angular-quick-starter",
-  "version": "6.0.0",
+  "name": "angular-atomic-app",
+  "version": "1.0.0",
   "description": "An Angular Webpack Starter kit featuring Angular (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
   "keywords": [
     "angular",
@@ -9,8 +9,8 @@
     "webpack",
     "typescript"
   ],
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/AngularClass/angular-starter",
+  "author": "Tarun Sukhu <tksukhu@gmail.com>",
+  "homepage": "https://github.com/tsukhu/angular-atomic-app",
   "license": "MIT",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
@@ -176,10 +176,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AngularClass/angular-starter.git"
+    "url": "git+https://github.com/tsukhu/angular-atomic-app.git"
   },
   "bugs": {
-    "url": "https://github.com/AngularClass/angular-starter/issues"
+    "url": "https://github.com/tsukhu/angular-atomic-app/issues"
   },
   "engines": {
     "node": ">= 4.2.1",
