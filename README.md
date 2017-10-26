@@ -8,7 +8,9 @@ This is a sample for building an Angular 4 web app based on the atomic web desig
 * Atoms / Molecules - Bootstrap , Google Fonts , Font Awesome
 * Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
 
-[](./pics/angular-atomic-app.png)
+<p align="center">
+    <img  alt="Tipe" src="./pics/angular-atomic-app.png" class="img-responsive">
+</p>
 
 # Atomic Library Dependency
 
