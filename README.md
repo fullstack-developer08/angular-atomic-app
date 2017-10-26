@@ -8,6 +8,8 @@ This is a sample for building an Angular 4 web app based on the atomic web desig
 * Atoms / Molecules - Bootstrap , Google Fonts , Font Awesome
 * Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
 
+[](./pics/angular-atomic-app.png)
+
 # Atomic Library Dependency
 
 * This project is based on the angular atomic library so we need to "link" to that (for dev mode). Once the library and the app is ready you can publish the angular-atomic-library to an npm registry and then use "npm install angular-atomic-library --save" to import the latest version.
