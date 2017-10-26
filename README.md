@@ -19,8 +19,12 @@ This is a sample for building an Angular 4 web app based on the atomic web desig
 ## Using `npm link`
 
 Check out and build the angular-atomic-library "https://github.com/tsukhu/angular-atomic-library.git"
-
-In you library root folder: (Separate Terminal)
+```bash
+git clone https://github.com/tsukhu/angular-atomic-library.git
+cd angular-atomic-library
+npm install
+```
+In you library (i.e angular-atomic-library) root folder: (Separate Terminal)
 
 ```bash
 # Create symbolic link
@@ -36,8 +40,7 @@ npm link
 npm build:watch
 ```
 
-
-In the angular-atomic-app project folder that should consume the library: (Separate Terminal)
+In the **angular-atomic-app** project folder that should consume the library: (Separate Terminal)
 
 The below steps will import your library into your project's source code
 
