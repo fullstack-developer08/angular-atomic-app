@@ -9,7 +9,7 @@ This is a sample for building an Angular 4 web app based on the atomic web desig
 * Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
 
 <p align="center">
-    <img  alt="Tipe" src="./pics/angular-atomic-app.png" class="img-responsive">
+    <img  alt="Angular Atomic Web App" src="./pics/angular-atomic-app.png" class="img-responsive">
 </p>
 
 # Atomic Library Dependency
@@ -32,7 +32,7 @@ npm link
 ```
 
 <p align="center">
-    <img  alt="Tipe" src="./pics/step1_link.png" class="img-responsive">
+    <img  alt="Library Linking" src="./pics/step1_link.PNG" class="img-responsive">
 </p>
 
 ```bash
@@ -49,7 +49,7 @@ The below steps will import your library into your project's source code
 npm link "angular-atomic-library"
 ```
 <p align="center">
-    <img  alt="Tipe" src="./pics/step2_link.png" class="img-responsive">
+    <img  alt="Application Linking" src="./pics/step2_link.PNG" class="img-responsive">
 </p>
 
 ```bash
