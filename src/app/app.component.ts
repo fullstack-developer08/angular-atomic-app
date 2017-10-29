@@ -20,6 +20,7 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
 import { NavLinks } from 'angular-atomic-library';
+import fetchInject from 'fetch-inject';
 /**
  * App Component
  * Top Level Component
@@ -47,9 +48,16 @@ export class AppComponent implements OnInit {
     private logger: Logger
   ) {
     this.shoppingCart = store.select('shoppingCart');
-   }
+  }
 
   public ngOnInit() {
+
+    fetchInject([
+      'assets/js/bootstrap-3.3.7/dist/js/bootstrap.min.js'
+    ], fetchInject([
+      'assets/js/jquery-3.2.1.slim.min.js'
+    ]));
+
     console.log('Initial App State', this.appState.state);
     WebFont.load({
       google: {
@@ -85,8 +93,8 @@ export class AppComponent implements OnInit {
       .map((payload) => ({ type: ADD_PLANS, payload }))
       .subscribe(
       (plans) => {
-       this.store.dispatch(plans);
-       this.planService.loadFeatures()
+        this.store.dispatch(plans);
+        this.planService.loadFeatures()
           // If successful, dispatch success action with result
           .map((payload) => ({ type: ADD_FEATURES, payload }))
           .subscribe((features) => {
