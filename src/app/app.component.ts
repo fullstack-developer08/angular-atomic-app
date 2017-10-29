@@ -20,7 +20,6 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
 import { NavLinks } from 'angular-atomic-library';
-import fetchInject from 'fetch-inject';
 /**
  * App Component
  * Top Level Component
@@ -51,13 +50,6 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {
-
-    fetchInject([
-      'assets/js/bootstrap-3.3.7/dist/js/bootstrap.min.js'
-    ], fetchInject([
-      'assets/js/jquery-3.2.1.slim.min.js'
-    ]));
-
     console.log('Initial App State', this.appState.state);
     WebFont.load({
       google: {
