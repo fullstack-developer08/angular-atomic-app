@@ -5,11 +5,11 @@
 const helpers = require('./helpers');
 /**
  * Used to merge webpack configs
-*/
+ */
 const webpackMerge = require('webpack-merge');
 /**
  * The settings that are common to prod and dev
-*/
+ */
 const commonConfig = require('./webpack.common.js');
 
 /**
@@ -172,8 +172,8 @@ module.exports = function (env) {
         'process.env.HMR': METADATA.HMR,
         'BASE_URL_PLANS': JSON.stringify('/assets/mock-data/plans.json'),
         'BASE_URL_FEATURES': JSON.stringify('/assets/mock-data/features.json'),
-        'BASE_URL_QUOTES': JSON.stringify('/assets/mock-data/quotes.json'),        
-       }),
+        'BASE_URL_QUOTES': JSON.stringify('/assets/mock-data/quotes.json'),
+      }),
 
       /**
        * Plugin: UglifyJsPlugin
@@ -193,8 +193,22 @@ module.exports = function (env) {
           mangle: true, // debug false
           output: {
             comments: false,
-            beautify: false,  // debug true
+            beautify: false, // debug true
           }
+        },
+        extractComments: true,
+        compress: {
+          sequences: true,
+          properties: true,
+          drop_debugger: true,
+          dead_code: true,
+          conditionals: true,
+          booleans: true,
+          unused: true,
+          if_return: true,
+          join_vars: true,
+          drop_console: true,
+          warnings: false
         },
         warnings: true,
       }),
