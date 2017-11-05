@@ -24,7 +24,7 @@ git clone https://github.com/tsukhu/angular-atomic-library.git
 cd angular-atomic-library
 npm install
 ```
-In you library (i.e angular-atomic-library) root folder: (Separate Terminal)
+In your library projects (i.e angular-atomic-library) root folder: (Separate Terminal)
 
 ```bash
 # Create symbolic link
