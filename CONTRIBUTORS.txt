@@ -1,0 +1,4 @@
+
+Additions made for building the atomic application on top of the @AngularClass/angular-starter seed by
+
+Tarun Kumar Sukhu<tsukhu@hcl.com>
