@@ -77,6 +77,8 @@ npm install <LIBRARY_FOLDER>/angular-atomic-library-<VERSION>.tgz
 ```
 npm run build:aot
 ```
+# Project Starter
+* This app is built on top of the [angular-starter](https://github.com/gdi2290/angular-starter) project
 
 # License
  [MIT](/LICENSE)
