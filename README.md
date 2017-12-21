@@ -1,6 +1,6 @@
 # Angular Atomic App
 
-This is a sample for building an Angular 4 web app based on the atomic web design principles and best of breed industry design patterns.
+This is a sample for building an Angular 5 web app based on the atomic web design principles and best of breed industry design patterns.
 
 # Why Atomic ?
 
