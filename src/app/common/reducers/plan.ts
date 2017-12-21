@@ -5,7 +5,11 @@ export const ADD_PLANS = 'ADD_PLANS';
 
 export const planInitState: Plan[] = [];
 
-export function planReducer(state: Plan[] = [], action: Action): Plan[] {
+export interface ActionWithPayload<T> extends Action {
+  payload: T;
+}
+
+export function planReducer(state: Plan[] = [], action: ActionWithPayload<any>): Plan[] {
   switch (action.type) {
     case ADD_PLANS:
       return action.payload;

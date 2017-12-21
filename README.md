@@ -59,5 +59,24 @@ npm start
 
 Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.
 
+# Final Production Build
+
+Production build will require the angular-atomic-library to also be built in production mode (AOT).
+In case you are not using an npm registry do the following
+* Build the library . Steps given in the library app [README](https://github.com/ERS-HCL/angular-atomic-library/blob/master/README.md)
+* Use npm pack to create the packaged module file
+```
+npm pack
+```
+* This will create the installable library module named "angular-atomic-library-<VERSION>.tgz"
+* In your angular-atomic-app project run the npm install using this package
+```
+npm install <LIBRARY_FOLDER>/angular-atomic-library-<VERSION>.tgz
+```
+* There after you can run the production build for the app
+```
+npm run build:aot
+```
+
 # License
  [MIT](/LICENSE)

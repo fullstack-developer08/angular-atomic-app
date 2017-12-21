@@ -10,7 +10,11 @@ export const UPDATE_ORDERID = 'UPDATE_ORDERID';
 export const UPDATE_BILLINGADDRESS = 'UPDATE_BILLINGADDRESS';
 export const UPDATE_SHIPPINGADDRESS = 'UPDATE_SHIPPINGADDRESS';
 
-export function orderReducer(state: Order = {}, action: Action): Order {
+export interface ActionWithPayload<T> extends Action {
+    payload: T;
+  }
+
+export function orderReducer(state: Order = {}, action: ActionWithPayload<any>): Order {
         switch (action.type) {
             case ADD_ORDER:
                 return Object.assign({}, state, action.payload);

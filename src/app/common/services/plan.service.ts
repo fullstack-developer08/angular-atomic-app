@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import { Store } from '@ngrx/store';
 import { AppStore } from '../models/appstore.model';
@@ -16,22 +16,20 @@ export class PlanService {
     public features: Observable<FeatureMap[]>;
 
     constructor(
-        private http: Http,
+        private http: HttpClient,
         public store: Store<AppStore>
     ) {
         this.plans = <Observable<Plan[]>> store.select('plans');
         this.features = <Observable<FeatureMap[]>> store.select('features');
     }
 
-    public loadPlans(type: string): Observable<Plan[]> {
-        return this.http.get(BASE_URL_PLANS + '?type=' + type)
-            .map((res) => res.json());
+    public loadPlans(type: string): Observable<any> {
+        return this.http.get(BASE_URL_PLANS + '?type=' + type);
          //   .catch(this.handleError);
     }
 
-    public loadFeatures(): Observable<FeatureMap[]> {
-        return this.http.get(BASE_URL_FEATURES)
-            .map((res) => res.json());
+    public loadFeatures(): Observable<any> {
+        return this.http.get(BASE_URL_FEATURES);
           //  .catch(this.handleError);
     }
 
