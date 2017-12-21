@@ -38,7 +38,8 @@
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
-    "useWebpackText": true
+    "useWebpackText": true,
+    "preserveWhitespaces": false
   },
   "compileOnSave": false,
   "buildOnSave": false,
