@@ -90,7 +90,7 @@
     "@ngrx/store": "^4.1.1",
     "@ngrx/store-devtools": "^4.1.1",
     "@ngrx/store-log-monitor": "^3.0.2",
-    "angular-atomic-library": "file:../angular-atomic-library/angular-atomic-library-0.0.2.tgz",
+    "angular-atomic-library": "file:../angular-atomic-library/angular-atomic-library-1.1.0.tgz",
     "concurrently": "^3.5.0",
     "core-js": "^2.5.1",
     "http-server": "^0.10.0",
