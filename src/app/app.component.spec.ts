@@ -6,14 +6,6 @@ import {
   TestBed,
   ComponentFixture
 } from '@angular/core/testing';
-import {
-  Http,
-  ConnectionBackend, RequestOptions, RequestMethod, BaseRequestOptions
-} from '@angular/http';
-import { MockBackend, MockConnection } from '@angular/http/testing';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 /**
  * Load the implementations that should be tested
@@ -68,32 +60,15 @@ describe(`App`, () => {
    */
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [ AppComponent ],
       schemas: [NO_ERRORS_SCHEMA],
       imports: [
-        HttpModule,
         StoreModule.provideStore(rootReducer, initialReducerState)
       ],
       providers: [AppState,
         PlanService,
         AppStateService,
-        RegisterGuard,
-     /*   BaseRequestOptions,
-        ConnectionBackend,
-        MockBackend,
-        {
-          provide: Http,
-          useFactory: function (backend: ConnectionBackend, defaultOptions: BaseRequestOptions) {
-            return new Http(backend, defaultOptions);
-          },
-          deps: [MockBackend, BaseRequestOptions]
-        },*/
-        [
-          {
-            provide: Logger,
-            useClass: ConsoleLogService
-          }
-        ]]
+        RegisterGuard,]
     })
     /**
      * Compile template and css
@@ -106,7 +81,7 @@ describe(`App`, () => {
    */
   beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
-    comp = fixture.componentInstance;
+    comp    = fixture.componentInstance;
 
     /**
      * Trigger initial data binding
@@ -119,10 +94,10 @@ describe(`App`, () => {
     expect(comp).toBeDefined();
   });
 
-  it(`should be @AngularClass`, () => {
-    expect(comp.url).toEqual('https://twitter.com/AngularClass');
-    expect(comp.angularclassLogo).toEqual('assets/img/angularclass-avatar.png');
-    expect(comp.name).toEqual('Angular 2 Webpack Starter');
+  it(`should be @TipeIO`, () => {
+    expect(comp.twitter).toEqual('https://twitter.com/gdi2290');
+    expect(comp.tipe).toEqual('assets/img/tipe.png');
+    expect(comp.name).toEqual('Angular Starter');
   });
 
   it('should log ngOnInit', () => {

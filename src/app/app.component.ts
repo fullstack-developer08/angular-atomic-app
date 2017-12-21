@@ -53,7 +53,10 @@ export class AppComponent implements OnInit {
     console.log('Initial App State', this.appState.state);
     WebFont.load({
       google: {
-        families: ['Roboto', 'sans-serif']
+        families: ['Roboto', 'Open Sans']
+      },
+      active: function() {
+        sessionStorage.fonts = true;
       }
     });
 

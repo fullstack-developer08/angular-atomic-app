@@ -60,19 +60,15 @@ import 'zone.js/dist/zone';
  * Date, currency, decimal and percent pipes.
  * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
  */
-import 'intl';  // Run `npm install --save intl`.
+// import 'intl';  // Run `npm install --save intl`.
 /**
  * Need to import at least one locale-data with intl.
  */
-import 'intl/locale-data/jsonp/en';
+// import 'intl/locale-data/jsonp/en';
 if ('production' === ENV) {
   // Production
+
 } else {
 
   // Development
-  Error.stackTraceLimit = Infinity;
-
-  /* tslint:disable no-var-requires */
-  require('zone.js/dist/long-stack-trace-zone');
-
 }

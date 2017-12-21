@@ -5,7 +5,13 @@ export const ADD_FEATURES = 'ADD_FEATURES';
 
 export const featuresInitState: FeatureMap[] = [];
 
-export function featuresReducer(state: FeatureMap[] = [], action: Action): FeatureMap[] {
+export interface ActionWithPayload<T> extends Action {
+  payload: T;
+}
+
+export function featuresReducer(
+  state: FeatureMap[] = [],
+  action: ActionWithPayload<any>): FeatureMap[] {
     switch (action.type) {
       case ADD_FEATURES:
         return action.payload;
