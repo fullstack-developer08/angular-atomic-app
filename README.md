@@ -6,7 +6,7 @@ This is a sample for building an Angular 5 web app based on the atomic web desig
 
 * The concept is based on Brad Frost "Atomic Web Design"
 * Atoms / Molecules - Bootstrap , Google Fonts , Font Awesome
-* Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/tsukhu/angular-atomic-library)
+* Organisms / Templates - Built as a separate project and then used in the main application [Angular Atomic Library](https://github.com/ERS-HCL/angular-atomic-library)
 
 <p align="center">
     <img  alt="Angular Atomic Web App" src="./pics/angular-atomic-app.png" class="img-responsive">
@@ -18,9 +18,9 @@ This is a sample for building an Angular 5 web app based on the atomic web desig
 
 ## Using `npm link`
 
-Check out and build the angular-atomic-library "https://github.com/tsukhu/angular-atomic-library.git"
+Check out and build the [angular-atomic-library](https://github.com/ERS-HCL/angular-atomic-library.git)
 ```bash
-git clone https://github.com/tsukhu/angular-atomic-library.git
+git clone https://github.com/ERS-HCL/angular-atomic-library.git
 cd angular-atomic-library
 npm install
 ```
