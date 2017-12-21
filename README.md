@@ -68,7 +68,7 @@ In case you are not using an npm registry do the following
 ```
 npm pack
 ```
-* This will create the installable library module named "angular-atomic-library-<VERSION>.tgz"
+* This will create the installable library module named `angular-atomic-library-<VERSION>.tgz`
 * In your angular-atomic-app project run the npm install using this package
 ```
 npm install <LIBRARY_FOLDER>/angular-atomic-library-<VERSION>.tgz
